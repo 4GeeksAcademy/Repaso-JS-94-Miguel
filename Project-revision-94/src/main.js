@@ -114,7 +114,7 @@ function renderCards() {
   deleteButtons.forEach((button) => {
     button.addEventListener("click", () => {
       const index = button.getAttribute("data-index");
-      cards.splice(index, 1);
+      cards.splice(index, 1); // splice(a, b) elimina elementos de un array, desde a tantas posiciones como b
       renderCards();
     });
   });
